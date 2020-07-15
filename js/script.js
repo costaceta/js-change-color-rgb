@@ -21,13 +21,16 @@ function start() {
 
             switch(inputsRangeList[i].id) {
                 case 'inputSlideRed':
-                    rgb(colorValue, colorGreen, colorBlue)
+                    colorRed = colorValue
+                    rgb(colorRed, colorGreen, colorBlue)
                     break
                 case 'inputSlideGreen':
-                    rgb(colorRed, colorValue, colorBlue)
+                    colorGreen = colorValue
+                    rgb(colorRed, colorGreen, colorBlue)
                     break
                 case 'inputSlideBlue':
-                    rgb(colorRed, colorGreen, colorValue)
+                    colorBlue = colorValue
+                    rgb(colorRed, colorGreen, colorBlue)
                     break
                 default:
                     console.log('Error')
